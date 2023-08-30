@@ -105,13 +105,13 @@ p {
 
 .middle-container {   
   background-color: #ffffff;
-  margin: 100px 0;
+  margin-top: 80px;
 }
 
-.profile img{
+img.portfolio-img {
+  width: 13%;
   align-self: center;
   padding-bottom: 50px;
-  width: 13%;
 }
 
 .Intro {
@@ -120,15 +120,15 @@ p {
 }
 
 .skill-row {
-  margin: 110px auto 120px auto;
-  width: 50%;
-  text-align: left;
+  margin: 4% auto 4% auto;
+  width: 80%;
+  text-align: justify;
 }
 
 .skill-image {
   float: left;
   margin-right: 30px;
-  width: 40%;    
+  width: 45%;    
 }
 
 .DIYer-image {
@@ -139,13 +139,12 @@ p {
 
 .bottom-container {
   background-color: white;
-  margin-top: 40px 0 20px 0;
-  padding: 40px 0;
+  margin-bottom: 10%;
 }
 
 .contact-me{
   background-color: #EAE0DA;
-  margin: 60px auto 60px;
+  margin: 0px auto 60px;
   padding-top: 3%;
 }
 
@@ -239,7 +238,6 @@ p {
   opacity: 1;
   padding: 3%;
   width: 80%;
-  /* text-align: left; */
 }
 
 .transbox > * {
