@@ -436,6 +436,13 @@ img.portfolio-img {
     font-size: 0.6rem;
   }
 
+  /*Recent work styling*/
+  .card-body h4{
+    font-size: 0.8rem;
+  }
+
+  
+
 }
 
 
