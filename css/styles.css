@@ -24,16 +24,16 @@ h2 {
 h3 {
   color: #dba1a1;
   font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
 }
 
-h4 {
+h4, h5 {
   color: #2c89a0;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   margin-top: 0%;
   margin-bottom: 0%;
   text-align: center;
-  text-transform: uppercase;
 }
 
 hr {
@@ -127,7 +127,7 @@ img.portfolio-img {
 .skill-image {
   float: left;
   margin-right: 30px;
-  width: 45%;    
+  width: 40%;   
 }
 
 .DIYer-image {
@@ -284,6 +284,10 @@ img.portfolio-img {
   background-color: #EAE0DA !important;
 }
 
+.card-text{
+  font-size: 0.9rem;
+}
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -437,8 +441,8 @@ img.portfolio-img {
   }
 
   /*Recent work styling*/
-  .card-body h4{
-    font-size: 0.8rem;
+  .card-body h5{
+    font-size: 1rem;
   }
 
   
