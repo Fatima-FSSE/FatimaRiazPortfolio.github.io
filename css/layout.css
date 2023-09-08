@@ -209,10 +209,6 @@ footer {
       flex-basis: auto;
     }
 
-    .navbar-expand-custom .nav-bar-heading{
-      font-size: 1rem;
-    }
-
     #navbarSupportedContent ul li a {
       padding: 12px 30px;
     }

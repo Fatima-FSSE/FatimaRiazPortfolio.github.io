@@ -64,7 +64,7 @@ p {
 
 .nav-bar-heading {
   color: #bd8181;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   padding-top: 10px;
 }
@@ -356,6 +356,10 @@ img.portfolio-img {
   background-color: #EAE0DA !important;
 }
 
+.diy-heading {
+  font-size: 1rem;
+}
+
 .diyProjectText p {
   line-height: 1.5;
   font-size: 0.8rem;
@@ -389,7 +393,7 @@ img.portfolio-img {
   }
 
   .navbar-expand-custom .nav-bar-heading{
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
 
   #navbarSupportedContent ul li a{
