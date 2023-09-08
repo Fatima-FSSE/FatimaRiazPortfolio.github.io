@@ -25,7 +25,8 @@ h3 {
   color: #dba1a1;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
-  word-spacing: normal;
+  margin-bottom: 5px;
+  text-align: left;
 }
 
 h4, h5 {
@@ -57,6 +58,10 @@ a:hover {
 
 p {
   line-height: 2;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 1.1em;
 }
 
 .navbar {
@@ -147,7 +152,11 @@ img.portfolio-img {
   padding-top: 3%;
 }
 
-.contact-message {
+.contact-me h3{
+  text-align: center;
+}
+
+.contact-message { 
   margin: 20px auto 20px;
   width: 40%;
 }
