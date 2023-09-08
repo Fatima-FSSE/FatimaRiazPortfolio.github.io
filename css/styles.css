@@ -24,7 +24,8 @@ h2 {
 h3 {
   color: #dba1a1;
   font-family: 'Montserrat', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
+  word-spacing: normal;
 }
 
 h4, h5 {
