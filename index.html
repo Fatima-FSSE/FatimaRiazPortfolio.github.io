@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fatima Riaz (Portfolio Website)</title>
   <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
   <link rel="stylesheet" href="css/layout.css">
@@ -34,7 +35,7 @@
             <a class="nav-link" href="./index.html"><i class="fa-solid fa-house"></i></i>Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./public/resume.html"><i class="far fa-clone"></i>About</a>
+            <a class="nav-link" href="./public/resume.html"><i class="far fa-clone"></i>Resume</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./public/recentWork.html"><i class="fa fa-cubes-stacked"></i>Recent Work</a>
@@ -66,6 +67,13 @@
     <div class="container">
       <div class="profile">
         <img class="portfolio-img" src="images/WebsitePPnew.png" alt="profile-image">
+        <div class="profile-icons">
+          <a target="_blank" href="https://github.com/Fatima-FSSE"><ion-icon name="logo-github"></ion-icon></a>
+          <a target="_blank" href="https://twitter.com/FatimaGatech"><ion-icon name="logo-twitter"></ion-icon></a>
+          <a target="_blank" href="https://www.linkedin.com/in/fatima-riaz/"><ion-icon
+              name="logo-linkedin"></ion-icon></a>
+        </div>
+
         <h2>Hello.</h2>
         <p class="Intro">I am a Houston, Texas based software engineer with nearly three years of
           experience in Java backend development and test automation. Alongside my technical skills,
@@ -76,33 +84,460 @@
       <hr>
       <div class="skills">
         <h2>My Skills.</h2>
-        <div class="skill-row">
-          <img class="skill-image" src="images/skills.png" alt="skill-image">
-  
-          <h3>Software Engineer</h3>
-          <p>As an experienced software engineer, I bring a diverse skill set to the table, including expertise in Java backend
-          development and test automation, complemented by strong problem-solving and communication abilities. I've recently
-          expanded my skill set to include HTML, CSS, JavaScript, React, Node and MongoDB. These new skills enhance my
-          capability to tackle complex software challenges and contribute innovatively to projects as a <strong>Fullstack Engineer</strong>. To learn more about my skill set
-            click <a href="./public/resume.html" class="resume-link">here</a> and to know more about my recent web
-            development projects <a href="./public/recentWork.html" class="resume-link">here</a>.</p>
+        <div class="row row-cols-1 row-cols-sm-2">
+          <div class="col col-lg-4 mb-3 align-items-stretch">
+            <div id="skill-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="card shadow-sm h-100">
+                    <img src="../images/ProjectsImgsN/moodify.png" class="card-img-top" width="100%" height="270"
+                      alt="Dice Game picture">
+                    <div class="card-body">
+                      <h5>MOODIFY (MERN STACK)</h5>
+                      <p class="card-text">
+                        <strong>Mongoose, Express, React, Node
+                          </b></strong><br>
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://drive.google.com/file/d/1vdlE8y-K-0u0Rbp_Lh4rR6B1ksQV7Q8U/view', '_blank');">Demo
+                            Video</button>
+                          <button type="button" id="cardBtn" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/moodify', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100">
+                    <img src="../images/ProjectsImgsN/Keeper.png" class="card-img-top" height="275"
+                      alt="Keeper app picture">
+                    <div class="card-body">
+                      <h5>Keeper (MERN Stack App) </h5>
+                      <p class="card-text"><strong>Mongoose, Express, React and Node.</strong>
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://jkzr2m-3001.csb.app/', '_blank');">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/Keeper-React', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100">
+                    <img src="../images/ProjectsImgsN/diceGame.png" class="card-img-top" width="100%" height="270"
+                      alt="Dice Game picture">
+                    <div class="card-body">
+                      <h5>Dice Game</h5>
+                      <p class="card-text">
+                        <strong>HTML, CSS and Javaascript</strong>
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://fatima-fsse.github.io/Dice-Game/', '_blank');">Play</button>
+                          <button type="button" id="cardBtn" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/Dice-Game', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100">
+                    <img src="../images/ProjectsImgsN/simonGame.png" class="card-img-top" height="270"
+                      alt="Simon game picture">
+                    <div class="card-body">
+                      <h5>Simon-Game</h5>
+                      <p class="card-text"><strong>HTML, CSS and JavaScritp(JQuery)</strong></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://fatima-fsse.github.io/Simon-Game/', '_blank');">Play</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/Simon-Game', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100">
+                    <img src="../images/ProjectsImgsN/iGarage.png" class="card-img-top" width="100%" height="270"
+                      alt="IGarage Logo picture">
+                    <div class="card-body">
+                      <h5>iGarage (Start-up Website-v1.0)</h5>
+                      <p class="card-text"><strong>HTML, CSS and Bootstrap </strong> </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://fatima-fsse.github.io/iGarage-Startup-Website-v1.0/', '_blank');">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/iGarage-Startup-Website', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100"> <!--card#4-->
+                    <img src="../images/ProjectsImgsN/iGaragev2.0.png" class="card-img-top" height="275"
+                      alt="IGarage v2.0 Logo picture">
+                    <div class="card-body">
+                      <h5>iGarage (Start-up Website-v2.0)</h5>
+                      <p class="card-text"><strong>HTML and Bootstrap.</strong> </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://fatima-fsse.github.io/iGarage-Startup-Website-v2.0/','_blank');">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/iGarage-Startup-Website-v2.0', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100"> <!--card#5-->
+                    <img src="../images/ProjectsImgsN/NLSignUp.png" class="card-img-top" height="275"
+                      alt="News Letter sign up picture">
+                    <div class="card-body">
+                      <h5>News Letter Sign Up (Web App)</h5>
+                      <p class="card-text"><strong>HTML, Bootstrap, nodeJs, Javaascript and
+                          MailChimp.</strong> </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://ten-wax-zircon.glitch.me', '_blank');">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/NewsLetter-SignUp', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100"> <!-- card#6 -->
+                    <img src="../images/ProjectsImgsN/todolist.png" class="card-img-top" height="275"
+                      alt="todolist logo picture">
+                    <div class="card-body">
+                      <h5>Todo List (Web App)</h5>
+                      <p class="card-text"><strong>HTML, CSS, EJS, nodeJs, Javaascript and
+                          MongoDB.</strong>
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://dlgg9y-3000.csb.app/', '_blank');">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/todolist', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100"> <!-- card#7 -->
+                    <img src="../images/ProjectsImgsN/DailyJournal.png" class="card-img-top" height="275"
+                      alt="Daily Journal Logo picture">
+                    <div class="card-body">
+                      <h5>Daily Journal (Web App)</h5>
+                      <p class="card-text"><strong>HTML, CSS, EJS, Express, Javaascript and MongoDB.</strong>
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://daily-journal-blog-post-1mru.onrender.com', '_blank');">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/Daily-Journal-Blog-post', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100"> <!-- card#8 -->
+                    <img src="../images/ProjectsImgsN/wikiAPI.png" class="card-img-top" height="275"
+                      alt="wikiAPI picture">
+                    <div class="card-body">
+                      <h5>wikiAPI</h5>
+                      <p class="card-text"><strong>Express, EJS and Mongoose</strong></p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/Wiki-API', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100">
+                    <img src="../images/ProjectsImgsN/Secrets.png" class="card-img-top" height="275"
+                      alt="Secrets app picture">
+                    <div class="card-body">
+                      <h5>Secrets (Webapp)</h5>
+                      <p class="card-text"><strong>HTML, CSS, Express, EJS, Mongoose and JavaScript</strong>
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://c3drnl-3000.csb.app', '_blank');">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/Secrets-WebApp', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100">
+                    <img src="../images/ProjectsImgsN/Keeper.png" class="card-img-top" height="275"
+                      alt="Keeper app picture">
+                    <div class="card-body">
+                      <h5>Keeper (MERN Stack App) </h5>
+                      <p class="card-text"><strong>Mongoose, Express, React and Node.</strong>
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://jkzr2m-3001.csb.app/', '_blank');">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/Keeper-React', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100">
+                    <img src="../images/ProjectsImgsN/Movie2.png" class="card-img-top" height="275"
+                      alt="Keeper app picture">
+                    <div class="card-body">
+                      <h5>Movie (FullStack App) </h5>
+                      <p class="card-text"><strong>SpringBoot, Bootstrap and React.</strong>
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://zh3k4m-3000.csb.app/', '_blank');">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/MovieFrontEnd', '_blank');">GitHub
+                            (FrontEnd)</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/MovieBackEnd', '_blank');">GitHub
+                            (Backend)</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100">
+                    <img src="../images/ProjectsImgsN/dbank.png" class="card-img-top" height="275"
+                      alt="Keeper app picture">
+                    <div class="card-body">
+                      <h5>DBANK (WEB3 App) </h5>
+                      <p class="card-text"><strong>React and Motoko(Dfinity)</strong>
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/dbank', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100">
+                    <img src="../images/ProjectsImgsN/DKeeper.png" class="card-img-top" height="275"
+                      alt="Keeper app picture">
+                    <div class="card-body">
+                      <h5>DKeeper (WEB3 App) </h5>
+                      <p class="card-text"><strong>React and Motoko(Dfinity)</strong>
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://4gzcx-oaaaa-aaaap-qbmqa-cai.raw.icp0.io', '_blank');">View</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/dkeeper', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100">
+                    <img src="../images/ProjectsImgsN/token.png" class="card-img-top" height="275"
+                      alt="Keeper app picture">
+                    <div class="card-body">
+                      <h5>DSurv (WEB3 App) </h5>
+                      <p class="card-text"><strong>React and Motoko(Dfinity)</strong>
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/token-local', '_blank');">GitHub
+                            (local)</button>
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/token-icp', '_blank');">GitHub
+                            (IC Network)</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100">
+                    <img src="../images/ProjectsImgsN/opend.png" class="card-img-top" height="275"
+                      alt="Keeper app picture">
+                    <div class="card-body">
+                      <h5>CRYPTO DUNKS (WEB3 App) </h5>
+                      <p class="card-text"><strong>React and Motoko(Dfinity)</strong>
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://github.com/Fatima-FSSE/opend', '_blank');">GitHub</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="card shadow-sm h-100">
+                    <img src="../images/ProjectsImgsN/hotel1.png" class="card-img-top" height="275"
+                      alt="Keeper app picture">
+                    <div class="card-body">
+                      <h5>A Hotel </h5>
+                      <p class="card-text"><strong>Website Designed in CANVA</strong>
+                      </p>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm btn-outline-secondary"
+                            onclick="window.open('https://www.canva.com/design/DAFdwGCu2Ok/i3-MnmX50_5kVnnv6SHZ6Q/view?website#4:a-hotel', '_blank');">View</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#skill-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#skill-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="skill-txt">
+              <h3>Software Engineer</h3>
+              <p>As an experienced software engineer, I specialize in Java backend development and test automation,
+                and
+                I
+                excel in problem-solving and communication. Recently, I expanded my skills to include HTML, CSS,
+                JavaScript, React, Node, and MongoDB, enhancing my ability to address complex software challenges as a
+                <strong>Fullstack Engineer</strong>. Learn more about my skills <a href="./public/resume.html"
+                  class="resume-link"><strong>here</strong></a> and see my recent web development projects <a
+                  href="./public/recentWork.html" class="resume-link"><strong>here</strong></a>.
+              </p>
+            </div>
+          </div>
+
+
+
         </div>
-        <div class="skill-row">
-          <img class="DIYer-image" src="images/diyer.png" alt="DIYer-image">
-          <h3>Hobbies</h3>
-          <p>In my spare time, I enjoy working on various DIY projects as a way to fuel my creativity
-            and engage in hands-on learning. It also serves as a way for me to unwind and find a sense of
-            fulfillment outside of my professional pursuits. Overall, my passion for DIY projects reflects
-            my drive to constantly challenge myself and grow both personally and professionally. you can find my recent
-            DIY project
-            <a href="./public/diyprojects.html" class="resume-link">here.</a>
-          </p>
+        <div class="hobbies">
+          <div class="row row-cols-1 row-cols-sm-2">
+            <div class="col">
+              <div class="hobbies-txt">
+                <h3><strong>Hobbies</strong></h3>
+                <p>In my spare time, I enjoy working on various DIY projects as a way to fuel my creativity
+                  and engage in hands-on learning. It also serves as a way for me to unwind and find a sense of
+                  fulfillment outside of my professional pursuits. Overall, my passion for DIY projects reflects
+                  my drive to constantly challenge myself and grow both personally and professionally. you can find my
+                  recent
+                  DIY project
+                  <a href="./public/diyprojects.html" class="resume-link"><strong>here.</strong></a>
+                </p>
+              </div>
+            </div>
+
+            <div class="col col-lg-4 mb-3 align-items-stretch">
+              <div id="hobbies-carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#hobbies-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#hobbies-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#hobbies-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#hobbies-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#hobbies-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  <button type="button" data-bs-target="#hobbies-carousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                  <button type="button" data-bs-target="#hobbies-carousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                  <button type="button" data-bs-target="#hobbies-carousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                  <button type="button" data-bs-target="#hobbies-carousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="images/DIY/carousel/1.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/DIY/carousel/2.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/DIY/carousel/3.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/DIY/carousel/4.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/DIY/carousel/5.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/DIY/carousel/6.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/DIY/carousel/7.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/DIY/carousel/8.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/DIY/carousel/9.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#hobbies-carousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#hobbies-carousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+            </div>
+            
+          </div>
+
+
         </div>
       </div>
       <hr>
     </div>
   </div>
-  
+
   <div class="bottom-container">
     <div class="contact-me container">
       <h2>Get In Touch</h2>
@@ -133,7 +568,7 @@
 
     <ul class="menu">
       <li><a href="./index.html">Home</a></li>
-      <li><a href="./public/resume.html">About</a></li>
+      <li><a href="./public/resume.html">Resume</a></li>
       <li><a href="./public/recentWork.html">Recent Work</a></li>
       <li><a href="./public/diyprojects.html">Hobbies</a></li>
       <li><a href="mailto:fatimariaz_gatech@outlook.com">Contact</a></li>
@@ -143,7 +578,9 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://kit.fontawesome.com/14156ccfbb.js" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
